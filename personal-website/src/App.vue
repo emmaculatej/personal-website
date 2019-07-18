@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <homepage :personalDetails="personalDetails"/>
+    <navigation> </navigation>
     <contact-me :personalDetails="personalDetails"/>
     <personal-description :personalDetails="personalDetails"/>
     <experience />
@@ -16,6 +17,7 @@ import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
 import CV from './components/CV.vue'
 import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'app',
@@ -25,7 +27,9 @@ export default {
     PersonalDescription,
     Experience,
     CV,
-    DevelopmentPortfolio
+    DevelopmentPortfolio,
+    Navigation
+
   }, 
   data : function (){
     return {
