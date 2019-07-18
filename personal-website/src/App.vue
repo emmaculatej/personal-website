@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <homepage :personalDetails="personalDetails"/>
-    <navigation> </navigation>
+    <home-page :personalDetails="personalDetails"/>
+    <navigation></navigation>
     <contact-me :personalDetails="personalDetails"/>
     <personal-description :personalDetails="personalDetails"/>
     <experience />
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Homepage from './components/HomePage.vue'
+import HomePage from './components/HomePage.vue'
 import ContactMe from './components/ContactMe.vue'
 import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
@@ -22,7 +22,7 @@ import Navigation from './components/Navigation.vue'
 export default {
   name: 'app',
   components: {
-    Homepage,
+    HomePage,
     ContactMe,
     PersonalDescription,
     Experience,
