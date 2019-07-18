@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <homepage name="Emmaculate Jeyarajah"/>
+    <homepage :personalDetails="personalDetails"/>
     <contact-me />
     <personal-description />
     <experience />
@@ -26,6 +26,18 @@ export default {
     Experience,
     CV,
     DevelopmentPortfolio
+  }, 
+  data : function (){
+    return {
+      personalDetails: {
+        forename: 'Emma',
+        surname: 'Jeyarajah',
+        dob: '02 October 1996',
+        email: 'emmaculate.jeyarajah@hotmail.com',
+        occupation: 'Software Developer'
+      }
+
+    }
   }
 }
 </script>
