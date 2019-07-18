@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <homepage :personalDetails="personalDetails"/>
-    <contact-me />
+    <contact-me :personalDetails="personalDetails"/>
     <personal-description />
     <experience />
     <c-v />
