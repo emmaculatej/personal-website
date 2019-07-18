@@ -2,7 +2,7 @@
   <div id="app">
     <homepage :personalDetails="personalDetails"/>
     <contact-me :personalDetails="personalDetails"/>
-    <personal-description />
+    <personal-description :personalDetails="personalDetails"/>
     <experience />
     <c-v />
     <development-portfolio />
