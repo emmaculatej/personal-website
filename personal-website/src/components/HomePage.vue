@@ -1,16 +1,21 @@
 <template>
   <div class="homepage">
-    <h1>{{name}}</h1>
-    <h2>{{role}}</h2>
+    <h1>{{personalDetails.forename}} {{personalDetails.surname}}</h1>
+    <h2>{{personalDetails.occupation}}</h2>
   </div>
 </template>
 
-<script>
+<script lang='ts'>
 export default {
   name: 'Homepage',
   props: {
-    name: String,
-    role: String,
+    personalDetails: {
+      forename: String,
+      surname: String,
+      dob: String,
+      email: String,
+      occupation: String
+    }
   }
 }
 </script>
