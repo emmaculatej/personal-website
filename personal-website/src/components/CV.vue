@@ -1,6 +1,6 @@
 <template>
-    <div class="cv">
-        <h1> CV button </h1>
+    <div>
+        <button> CV button </button>
     </div>
 </template>
 

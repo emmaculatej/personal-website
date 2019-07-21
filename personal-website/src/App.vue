@@ -5,8 +5,6 @@
     <contact-me :personalDetails="personalDetails"/>
     <personal-description :personalDetails="personalDetails"/>
     <experience />
-    <c-v />
-    <development-portfolio />
   </div>
 </template>
 
@@ -15,8 +13,6 @@ import HomePage from './components/HomePage.vue'
 import ContactMe from './components/ContactMe.vue'
 import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
-import CV from './components/CV.vue'
-import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
 import Navigation from './components/Navigation.vue'
 
 export default {
@@ -26,8 +22,6 @@ export default {
     ContactMe,
     PersonalDescription,
     Experience,
-    CV,
-    DevelopmentPortfolio,
     Navigation
 
   }, 

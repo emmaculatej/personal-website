@@ -34,9 +34,6 @@ export default new Router({
         path: '/DevelopmentPortfolio',
         name: 'DevelopmentPortfolio',
         component: DevelopmentPortfolio
-    },
-
-
-
+    }
   ]
 })
