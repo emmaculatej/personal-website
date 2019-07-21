@@ -3,6 +3,7 @@
         <h1> Contact Me </h1>
         <div class="row">
             <div class="col-3">
+                <i class="fas fa-cloud"></i>
             <h4> Email </h4>
             <a href="mailto:emmaculate.jeyarajah@hotmail.com"> {{personalDetails.email}}</a>
             </div>
