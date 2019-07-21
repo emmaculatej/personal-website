@@ -2,11 +2,11 @@
     <div>
         <h1> Contact Me </h1>
         <div class="row">
-            <div>
+            <div class="col-3">
             <h4> Email </h4>
             <a href="mailto:emmaculate.jeyarajah@hotmail.com"> {{personalDetails.email}}</a>
             </div>
-            <div v-for="item in socialMedia" v-bind:key="item.id">
+            <div class="col-3" v-for="item in socialMedia" v-bind:key="item.id">
                 <h4> {{item.title}} </h4>
                 <a :href=item.link> {{item.link}} </a>
             </div>
