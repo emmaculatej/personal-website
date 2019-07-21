@@ -2,9 +2,9 @@
   <div id="app">
     <home-page :personalDetails="personalDetails"/>
     <navigation></navigation>
-    <contact-me :personalDetails="personalDetails"/>
     <personal-description :personalDetails="personalDetails"/>
     <experience />
+    <contact-me :personalDetails="personalDetails"/>
   </div>
 </template>
 
