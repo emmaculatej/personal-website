@@ -15,16 +15,20 @@
                     <router-link class="nav-link" to="/experience">Experience</router-link>
                 </li>
             <!-- <router-link to="/DevelopmentPortfolio">Portfolio</router-link> -->
-
             </ul>
+            <c-v/>
         </nav>
     </div>
 </template>
 
 <script>
+import CV from "../components/CV.vue";
 
 export default {
-    name: 'Navigation'
+    name: 'Navigation',
+    components: {
+        CV
+    }
 }
 </script>
 

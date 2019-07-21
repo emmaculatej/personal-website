@@ -1,11 +1,12 @@
 <template>
     <div>
-        <button> CV button </button>
+        <button class="btn btn-primary"> CV button </button>
     </div>
 </template>
 
 <script>
 export default {
+    name: 'CV'
     
 }
 </script>
