@@ -1,17 +1,15 @@
 <template>
 <div>
-            <h1> Experience </h1>
+    <h1> Experience </h1>
     <div class="timeline">
-        <div v-for="work in workExperience" v-bind:key="work.id" @mouseover="hover = true" @mouseleave="hover = false">
-            <div class="container right">
-                <div class="content">
+        <div v-for="work in workExperience" v-bind:key="work.id" :class="{'container right': work.id % 2 === 0, 'container left': work.id % 2 !== 0 }">
+                <div class="card content">
                 <h5> {{work.name}} </h5>
                 <span> {{work.startDate}} - {{work.endDate}}</span>
-                    <div v-if="hover">
+                    <div>
                         <span>{{work.description}}</span>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
@@ -23,16 +21,14 @@ export default {
     data: function () {
         return {
             workExperience : [
-                {id: 1, name: 'Work1', startDate: '01/01/1990', endDate: '02/01/1990', description: 'This is a secret message.'},
-                {id: 2, name: 'Work2', startDate: '01/01/1990', endDate: '02/01/1990', description: 'This is a secret message.'},
-                {id: 3, name: 'Work3', startDate: '01/01/1990', endDate: '02/01/1990', description: 'This is a secret message.'},
-                {id: 4, name: 'Work4', startDate: '01/01/1990', endDate: '02/01/1990', description: 'This is a secret message.'},
-                {id: 5, name: 'Work5', startDate: '01/01/1990', endDate: '02/01/1990', description: 'This is a secret message.'}
-            ],
-            hover: false
+                {id: 1, name: 'Work1', startDate: '01/01/1990', endDate: '02/01/1990', location: '', description: 'This is a secret message.'},
+                {id: 2, name: 'Work2', startDate: '01/01/1990', endDate: '02/01/1990', location: '', description: 'This is a secret message.'},
+                {id: 3, name: 'Work3', startDate: '01/01/1990', endDate: '02/01/1990', location: '', description: 'This is a secret message.'},
+                {id: 4, name: 'Work4', startDate: '01/01/1990', endDate: '02/01/1990', location: '', description: 'This is a secret message.'},
+                {id: 5, name: 'Work5', startDate: '01/01/1990', endDate: '02/01/1990', location: '', description: 'This is a secret message.'}
+            ]
         }
     }
-    
 }
 </script>
 
@@ -42,7 +38,7 @@ export default {
 }
 
 body {
-  background-color: #474e5d;
+  background-color: #324e8b;
   font-family: Helvetica, sans-serif;
 }
 
@@ -57,12 +53,12 @@ body {
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
-  background-color: white;
+  width: 10px;
+  background-color: orange;
   top: 0;
   bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  left: 75%;
+  margin-left: 0px;
 }
 
 /* Container around content */
@@ -80,11 +76,11 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: orange;
+  border: 4px solid orange;
   top: 15px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 1;  
 }
 
 /* Place the container to the left */
@@ -108,7 +104,7 @@ body {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent orange;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -120,20 +116,20 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid blue;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent orange transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -8px;
 }
 
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: pink;
   position: relative;
   border-radius: 6px;
 }
@@ -142,7 +138,7 @@ body {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+  left: 25px;
   }
   
   /* Full-width containers */
@@ -157,12 +153,12 @@ body {
   left: 60px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent orange transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-  left: 15px;
+  left: 17px;
   }
   
   /* Make all right containers behave like the left ones */
