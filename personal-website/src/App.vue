@@ -1,31 +1,29 @@
 <template>
   <div id="app">
-    <homepage :personalDetails="personalDetails"/>
-    <contact-me />
-    <personal-description />
+    <home-page :personalDetails="personalDetails"/>
+    <navigation></navigation>
+    <contact-me :personalDetails="personalDetails"/>
+    <personal-description :personalDetails="personalDetails"/>
     <experience />
-    <c-v />
-    <development-portfolio />
   </div>
 </template>
 
 <script>
-import Homepage from './components/HomePage.vue'
+import HomePage from './components/HomePage.vue'
 import ContactMe from './components/ContactMe.vue'
 import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
-import CV from './components/CV.vue'
-import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'app',
   components: {
-    Homepage,
+    HomePage,
     ContactMe,
     PersonalDescription,
     Experience,
-    CV,
-    DevelopmentPortfolio
+    Navigation
+
   }, 
   data : function (){
     return {
