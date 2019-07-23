@@ -1,7 +1,7 @@
 <template>
 <div class="personaldescription">
-    <h1> About me </h1>
-    <h4> {{ personalDetails.forename}} {{ personalDetails.surname}} </h4>
+    <h4> About me </h4>
+    <h5> {{ personalDetails.forename}} {{ personalDetails.surname}} </h5>
     <h6> {{ personalDetails.occupation}} </h6>
     <div>
     <img src="../assets/profilepic.jpg" style="width: 10%; height: 10%"/>
