@@ -2,11 +2,11 @@
   <div id="app">
     <home-page :personalDetails="personalDetails"/>
     <navigation></navigation>
-    <contact-me :personalDetails="personalDetails"/>
     <personal-description :personalDetails="personalDetails"/>
     <experience />
     <development-portfolio />
     <personal-interest />
+    <contact-me :personalDetails="personalDetails"/>
   </div>
 </template>
 

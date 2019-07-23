@@ -1,20 +1,39 @@
 <template>
     <div>
-        <nav>
-        <router-link to="/" class="nav-item">Home</router-link>
-        <router-link to="/contactMe">Contact Me</router-link>
-        <router-link to="/personalStatement">Personal Statement</router-link>
-        <router-link to="/experience">Experience</router-link>
-        <router-link to="/developmentPortfolio">Portfolio</router-link>
-        <router-link to="/personalInterests">Interests</router-link>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" v-on:click="active = 'active'">    
+                    <router-link class="nav-link" to="/">Home</router-link>
+                </li>
+                <li class="nav-item" v-on:click="active = 'active'">              
+                    <router-link class="nav-link" to="/personalStatement">Personal Statement</router-link>
+                </li>
+                <li class="nav-item" v-on:click="active = 'active'">
+                    <router-link class="nav-link" to="/experience">Experience</router-link>
+                </li>
+                <li class="nav-item" v-on:click="active = 'active'">
+                    <router-link to="/developmentPortfolio">Portfolio</router-link>
+                </li>
+                <li class="nav-item" v-on:click="active = 'active'">
+                    <router-link to="/personalInterests">Interests</router-link>
+                </li>
+                <li class="nav-item" v-on:click="active = 'active'">
+                    <router-link class="nav-link" to="/contactMe">Contact Me</router-link>
+                </li>       
+            </ul>
+            <c-v/>
         </nav>
     </div>
 </template>
 
 <script>
+import CV from "../components/CV.vue";
 
 export default {
-    name: 'Navigation'
+    name: 'Navigation',
+    components: {
+        CV
+    }
 }
 </script>
 

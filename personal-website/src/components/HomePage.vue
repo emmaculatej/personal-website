@@ -1,11 +1,11 @@
 <template>
-  <div class="card">
+  <div class="card jumbotron">
     <h1>{{personalDetails.forename}} {{personalDetails.surname}}</h1>
     <h2>{{personalDetails.occupation}}</h2>
   </div>
 </template>
 
-<script lang='ts'>
+<script>
 export default {
   name: 'Homepage',
   props: {
