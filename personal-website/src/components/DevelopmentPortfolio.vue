@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+      <h3> Portfolio </h3>
     <b-carousel
       id="carousel-1"
       v-model="slide"
