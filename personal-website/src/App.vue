@@ -4,6 +4,8 @@
     <navigation></navigation>
     <personal-description :personalDetails="personalDetails"/>
     <experience />
+    <development-portfolio />
+    <personal-interest />
     <contact-me :personalDetails="personalDetails"/>
   </div>
 </template>
@@ -14,6 +16,8 @@ import ContactMe from './components/ContactMe.vue'
 import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
 import Navigation from './components/Navigation.vue'
+import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
+import PersonalInterest from './components/PersonalInterests.vue';
 
 export default {
   name: 'app',
@@ -22,7 +26,9 @@ export default {
     ContactMe,
     PersonalDescription,
     Experience,
-    Navigation
+    Navigation,
+    DevelopmentPortfolio,
+    PersonalInterest
 
   }, 
   data : function (){

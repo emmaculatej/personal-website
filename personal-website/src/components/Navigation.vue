@@ -12,9 +12,14 @@
                     <router-link class="nav-link" to="/experience">Experience</router-link>
                 </li>
                 <li class="nav-item" v-on:click="active = 'active'">
-                    <router-link class="nav-link" to="/contactMe">Contact Me</router-link>
+                    <router-link to="/developmentPortfolio">Portfolio</router-link>
                 </li>
-            <!-- <router-link to="/DevelopmentPortfolio">Portfolio</router-link> -->
+                <li class="nav-item" v-on:click="active = 'active'">
+                    <router-link to="/personalInterests">Interests</router-link>
+                </li>
+                <li class="nav-item" v-on:click="active = 'active'">
+                    <router-link class="nav-link" to="/contactMe">Contact Me</router-link>
+                </li>       
             </ul>
             <c-v/>
         </nav>

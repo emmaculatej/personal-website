@@ -36,14 +36,7 @@ export default {
                 {id: 2, icon: ['fab', 'github'], title: 'GitHub', link: 'https://github.com/emmaculatej'}
             ]
         }
-    },
-    methods: {
-        sendEmail: void {
-
-
-        }
     }
-    
 }
 </script>
 
