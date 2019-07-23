@@ -29,14 +29,7 @@ export default {
                 {id: 2,title: 'GitHub', link: 'https://github.com/emmaculatej'}
             ]
         }
-    },
-    methods: {
-        sendEmail: void {
-
-
-        }
     }
-    
 }
 </script>
 
