@@ -1,28 +1,29 @@
 <template>
-<div>
+<div class="container">
     <h4> Personal Interests </h4>
-    <div class="container col-10">
-        <div class="row">
-            <div class="card col-4">
-                <img src="../assets/flower.jpg" />
-                <h5> heading </h5>
-                <span> some text that needs to be adapted </span>
-                <span> some text that needs to be adapted </span>
+        <div class="card-deck">
+            <div class="card">              
+                <div class="card-body">
+                    <img class="card-img-top" src="../assets/flower.jpg" />
+                    <h5 class="card-title"> heading </h5>
+                    <span class="card-text"> some text that needs to be adapted </span>
+                    <span class="card-text"> some text that needs to be adapted </span>
+                </div>
             </div>
-            <div class="card col-4">
-                 <img src="../assets/flower.jpg" />
-                <h5> heading </h5>
-                <span> some text that needs to be adapted </span>
+            <div class="card">
+                <div class="card-body" alt="Card image cap">
+                    <img class="card-img-top" src="../assets/flower.jpg" />
+                    <h5 class="card-title"> heading </h5>
+                    <span class="card-text"> some text that needs to be adapted </span>
+                </div>
             </div>
-            <div class="card col-4">
-                 <img src="../assets/flower.jpg" />
-                <h5> heading </h5>
-                <span> some text that needs to be adapted </span>
-                <span> some text that needs to be adapted </span>
+            <div class="card">
+                <div class="card-body" alt="Card image cap">
+                        <img class="card-img-top" src="../assets/flower.jpg" />
+                        <h5 class="card-title"> heading </h5>
+                </div>
             </div>
         </div>
-    </div>
-
 </div>
 </template>
 
@@ -30,6 +31,5 @@
 
 export default {
     name: 'PersonalInterests'
-
 }
 </script>
