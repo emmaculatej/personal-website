@@ -38,15 +38,14 @@ export default {
 }
 
 body {
-  background-color: #324e8b;
-  font-family: Helvetica, sans-serif;
+  background-color: white;
+  font-family: Verdana, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* The actual timeline (the vertical ruler) */
