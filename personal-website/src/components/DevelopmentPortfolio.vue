@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-      <h3> Portfolio </h3>
+  <div>
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -68,3 +67,9 @@
     }
   }
 </script>
+
+<style scoped>
+ .portfolioBackground{
+     background-color: slategray;
+ }
+</style>

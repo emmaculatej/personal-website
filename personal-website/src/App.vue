@@ -6,6 +6,7 @@
     <personal-description :personalDetails="personalDetails"/>
     <experience />
     <development-portfolio />
+    <personal-interest />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
 import Navigation from './components/Navigation.vue'
 import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
+import PersonalInterest from './components/PersonalInterests.vue';
 
 export default {
   name: 'app',
@@ -25,7 +27,8 @@ export default {
     PersonalDescription,
     Experience,
     Navigation,
-    DevelopmentPortfolio
+    DevelopmentPortfolio,
+    PersonalInterest
 
   }, 
   data : function (){
