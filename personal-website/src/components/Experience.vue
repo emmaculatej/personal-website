@@ -1,9 +1,9 @@
 <template>
 <div class="card">
-    <h1> Experience </h1>
+    <h4> Experience </h4>
     <div class="timeline">
         <div v-for="work in workExperience" v-bind:key="work.id" :class="{'container right': work.id % 2 === 0, 'container left': work.id % 2 !== 0 }">
-                <div class="card content">
+                <div class="content">
                 <h5> {{work.name}} </h5>
                 <span> {{work.startDate}} - {{work.endDate}}</span>
                     <div>
@@ -45,7 +45,6 @@ body {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -56,7 +55,7 @@ body {
   background-color: orange;
   top: 0;
   bottom: 0;
-  left: 75%;
+  left: 50%;
   margin-left: 0px;
 }
 
@@ -65,7 +64,7 @@ body {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 30%;
 }
 
 /* The circles on the timeline */
@@ -75,7 +74,7 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: orange;
+  background-color: white;
   border: 4px solid orange;
   top: 15px;
   border-radius: 50%;
@@ -84,12 +83,12 @@ body {
 
 /* Place the container to the left */
 .left {
-  left: 0;
+  left: -15%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  left: 15%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -128,7 +127,8 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: orange;
+  background-color: white;
+  border: medium solid orange;
   position: relative;
 }
 
