@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="card">
     <h1> Experience </h1>
     <div class="timeline">
         <div v-for="work in workExperience" v-bind:key="work.id" :class="{'container right': work.id % 2 === 0, 'container left': work.id % 2 !== 0 }">

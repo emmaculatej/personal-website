@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage">
+  <div class="card">
     <h1>{{personalDetails.forename}} {{personalDetails.surname}}</h1>
     <h2>{{personalDetails.occupation}}</h2>
   </div>

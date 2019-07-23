@@ -1,5 +1,5 @@
 <template>
-<div class="personaldescription">
+<div class="card">
     <h1> About me </h1>
     <h4> {{ personalDetails.forename}} {{ personalDetails.surname}} </h4>
     <h6> {{ personalDetails.occupation}} </h6>
