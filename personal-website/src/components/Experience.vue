@@ -101,7 +101,7 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid orange;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent orange;
 }
@@ -115,7 +115,7 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid blue;
+  border: medium solid orange;
   border-width: 10px 10px 10px 0;
   border-color: transparent orange transparent transparent;
 }
@@ -128,9 +128,8 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: pink;
+  background-color: orange;
   position: relative;
-  border-radius: 6px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -150,7 +149,7 @@ body {
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
   left: 60px;
-  border: medium solid white;
+  border: medium solid orange;
   border-width: 10px 10px 10px 0;
   border-color: transparent orange transparent transparent;
   }
