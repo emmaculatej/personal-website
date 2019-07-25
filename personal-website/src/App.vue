@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <home-page :personalDetails="personalDetails"/>
-    <navigation></navigation>
+    <!-- <home-page :personalDetails="personalDetails"/>
+    <navigation></navigation> -->
     <personal-description :personalDetails="personalDetails"/>
     <experience />
     <development-portfolio />
@@ -11,22 +11,22 @@
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
+// import HomePage from './components/HomePage.vue'
 import ContactMe from './components/ContactMe.vue'
 import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
-import Navigation from './components/Navigation.vue'
+// import Navigation from './components/Navigation.vue'
 import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
 import PersonalInterest from './components/PersonalInterests.vue';
 
 export default {
   name: 'app',
   components: {
-    HomePage,
+    // HomePage,
     ContactMe,
     PersonalDescription,
     Experience,
-    Navigation,
+    // Navigation,
     DevelopmentPortfolio,
     PersonalInterest
 
@@ -54,11 +54,11 @@ export default {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4;
 }
 
-h4{
+h4, h5, h6{
   text-align: center;
 }
 </style>
