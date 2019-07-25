@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h4> Personal Interests </h4>
+    <h4 href="/personalInterests"> Personal Interests </h4>
         <div class="card-deck">
             <div class="card">              
                 <div class="card-body">
