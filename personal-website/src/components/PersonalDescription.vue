@@ -59,6 +59,7 @@ export default {
 
 .personalDescription{
     background-color: coral;
+    color: white;
 }
 </style>
 
