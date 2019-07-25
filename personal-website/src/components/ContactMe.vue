@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h4>Connect with me! </h4>
+    <div class="card">
+        <h4 class="footerHeading">Connect with me! </h4>
         <div class="row">
             <div class="col-3">          
             <h4> 
@@ -33,7 +33,8 @@ export default {
         return {
             socialMedia: [
                 {id: 1, icon: ['fab', 'linkedin'], title: 'LinkedIn', link: 'https://uk.linkedin.com/in/emmaculate-jeyarajah'},
-                {id: 2, icon: ['fab', 'github'], title: 'GitHub', link: 'https://github.com/emmaculatej'}
+                {id: 2, icon: ['fab', 'github'], title: 'GitHub', link: 'https://github.com/emmaculatej'},
+                {id: 2, icon: ['fab', 'youtube'], title: 'Youtube', link: 'https://www.youtube.com/channel/UCuBLXiAFnO-hvSXyWQ3f5gA'}
             ]
         }
     }
@@ -41,5 +42,15 @@ export default {
 </script>
 
 <style scoped>
+
+.card{
+    padding-bottom: 5%;
+}
+
+.footerHeading{
+    padding-bottom: 3%;
+    font-size: 200%;
+    padding-top: 3%;
+}
 
 </style>

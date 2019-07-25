@@ -34,11 +34,6 @@ export default {
 
 <style scoped>
 
-h4, h5 {
-    font-family: Courier New, Century Gothic, sans-serif;
-    font-size: 200%;
-}
-
 .profilePicture {
     margin-left: 10%;
     border-radius: 5px;
@@ -47,21 +42,22 @@ h4, h5 {
     float: left;
     padding-top: 5%;
 }
-.personalHeaders{
-    padding-top: 10%;
-}
 
 .description{
     margin-left: 45%;
     display: block;
     text-align: center;
-    width: 45%;
-    padding-top: 10%;
+    width: 40%;
+    padding-top: 8%;
+    padding-left: 5%;
 
 }
 
+.personalHeaders {
+    font-size: 250%;
+}
+
 .personalDescription{
-    padding-bottom: 5%;
     background-color: coral;
 }
 </style>

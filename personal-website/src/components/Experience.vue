@@ -1,6 +1,6 @@
 <template>
 <div class="card">
-    <h4> Experience </h4>
+    <h4 class="experienceHeader"> Experience </h4>
     <div class="timeline">
         <div v-for="work in workExperience" v-bind:key="work.id" :class="{'container right': work.id % 2 === 0, 'container left': work.id % 2 !== 0 }">
                 <div class="content">
@@ -44,6 +44,8 @@ body {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
+  padding-top: 5%;
+  padding-bottom: 5%;
   position: relative;
 }
 
@@ -52,7 +54,7 @@ body {
   content: '';
   position: absolute;
   width: 10px;
-  background-color: orange;
+  background-color: coral;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -75,7 +77,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid orange;
+  border: 4px solid coral;
   top: 15px;
   border-radius: 50%;
   z-index: 1;  
@@ -100,9 +102,9 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid orange;
+  border: medium solid coral;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent orange;
+  border-color: transparent transparent transparent coral;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -114,9 +116,9 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid orange;
+  border: medium solid coral;
   border-width: 10px 10px 10px 0;
-  border-color: transparent orange transparent transparent;
+  border-color: transparent coral transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -128,8 +130,13 @@ body {
 .content {
   padding: 20px 30px;
   background-color: white;
-  border: medium solid orange;
+  border: medium solid coral;
   position: relative;
+}
+
+.experienceHeader{
+  padding-bottom: 5%;
+  font-size: 250%;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -149,9 +156,9 @@ body {
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
   left: 60px;
-  border: medium solid orange;
+  border: medium solid coral;
   border-width: 10px 10px 10px 0;
-  border-color: transparent orange transparent transparent;
+  border-color: transparent coral transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */

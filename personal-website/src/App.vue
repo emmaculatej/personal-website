@@ -4,8 +4,8 @@
     <navigation></navigation> -->
     <personal-description :personalDetails="personalDetails"/>
     <experience />
-    <development-portfolio />
     <personal-interest />
+    <development-portfolio />
     <contact-me :personalDetails="personalDetails"/>
   </div>
 </template>
@@ -58,7 +58,16 @@ body {
   line-height: 1.4;
 }
 
+h4, h5 {
+    font-family: Courier New, Century Gothic, sans-serif;
+}
+
 h4, h5, h6{
   text-align: center;
+}
+
+.card {
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 </style>
