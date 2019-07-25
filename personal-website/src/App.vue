@@ -67,7 +67,7 @@ h4, h5, h6{
 }
 
 .card {
-  padding-top: 5%;
-  padding-bottom: 10%;
+  padding-top: 3%;
+  padding-bottom: 5%;
 }
 </style>

@@ -40,7 +40,9 @@ export default {
     max-width: 300%;
     width: 30%;
     float: left;
-    padding-top: 5%;
+    height: auto;
+    margin-top: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .description{

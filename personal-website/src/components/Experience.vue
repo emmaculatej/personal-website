@@ -44,8 +44,8 @@ body {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   position: relative;
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 .experienceHeader{
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   font-size: 250%;
 }
 
