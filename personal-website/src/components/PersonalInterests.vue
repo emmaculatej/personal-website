@@ -3,25 +3,28 @@
     <div class="container" id="personalInterestContainer">
         <h4 class="container interestHeading"> Personal Interests </h4>
             <div class="card-deck">
-                <div class="card">                          
-                    <div class="card-body text-center">
-                        <img class="card-img-top" src="../assets/flower.jpg" alt="Card image"/>                        
-                        <h5 class="card-title"> heading </h5>
-                        <span class="card-text"> some text that needs to be adapted </span>
-                        <span class="card-text"> some text that needs to be adapted </span>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../assets/flower.jpg" alt="Avatar" style="width:100%;height:auto;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body text-center" alt="Card image cap">
-                        <img class="card-img-top" src="../assets/flower.jpg" />
-                        <h5 class="card-title"> heading </h5>
-                        <span class="card-text"> some text that needs to be adapted </span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body text-center" alt="Card image cap">
-                            <img class="card-img-top" src="../assets/flower.jpg" />
-                            <h5 class="card-title"> heading </h5>
+                 <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../assets/flower.jpg" alt="Avatar" style="width:100%;height:auto;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,5 +54,9 @@ export default {
 .interestHeading{
     font-size: 200%;
     color: white;
+}
+
+.card-title{
+    margin-top: 3%;
 }
 </style>
