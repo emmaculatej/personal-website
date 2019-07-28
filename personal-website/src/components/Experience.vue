@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style scoped>
+span {
+  font-size: 18px;
+}
 * {
   box-sizing: border-box;
 }

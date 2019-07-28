@@ -58,12 +58,15 @@ body {
   line-height: 1.4;
 }
 
-h4, h5 {
-    font-family: Courier New, Century Gothic, sans-serif;
+p { 
+  font-size: 25px;
 }
-
 h4, h5, h6{
   text-align: center;
+}
+
+h4, h5 {
+    font-family: Courier New, Century Gothic, sans-serif;
 }
 
 .card {
