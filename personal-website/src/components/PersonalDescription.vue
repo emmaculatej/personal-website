@@ -15,13 +15,21 @@
             Experienced Developer with a demonstrated history of working in the information technology and services industry. 
             Skilled in HTML, JavaScript, .Net framework, C#, and Visual Studio. 
             Strong engineering professional with a Bachelor's degree focused in Computer Science from University of Surrey. </p>
+    <div class="cvButton">
+        <c-v/>
     </div>
+    </div>
+    
 </div>  
 </template>
 
 <script>
+import CV from "../components/CV.vue";
 export default {
     name: 'Description',
+    components: {
+        CV
+    },
     props: {
         personalDetails: {
             forename: String,
@@ -34,6 +42,9 @@ export default {
 
 <style scoped>
 
+.cvButton {
+    margin-left: 65%;
+}
 .profilePicture {
     margin-left: 10%;
     border-radius: 5px;

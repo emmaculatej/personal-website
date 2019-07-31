@@ -33,7 +33,6 @@
 </template>
 
 <script>
-
 export default {
     name: 'PersonalInterests',
     data: function() {

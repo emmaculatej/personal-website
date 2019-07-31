@@ -1,6 +1,6 @@
 <template>
     <div>           
-        <button class="btn btn-primary" v-on:click="generate"> CV button </button>
+        <button class="btn btn-lg" style="background-color: white; color: coral;"  v-on:click="generate"> CV button </button>
     </div>
 </template>
 
