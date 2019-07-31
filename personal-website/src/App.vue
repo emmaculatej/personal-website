@@ -3,7 +3,7 @@
     <!-- <home-page :personalDetails="personalDetails"/>
     <navigation></navigation> -->
     <personal-description :personalDetails="personalDetails"/>
-    <experience />
+    <experience/>
     <personal-interest />
     <!-- <development-portfolio /> -->
     <contact-me :personalDetails="personalDetails"/>
