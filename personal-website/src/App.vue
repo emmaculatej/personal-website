@@ -3,9 +3,9 @@
     <!-- <home-page :personalDetails="personalDetails"/>
     <navigation></navigation> -->
     <personal-description :personalDetails="personalDetails"/>
-    <experience />
+    <experience/>
     <personal-interest />
-    <development-portfolio />
+    <!-- <development-portfolio /> -->
     <contact-me :personalDetails="personalDetails"/>
   </div>
 </template>
@@ -16,7 +16,7 @@ import ContactMe from './components/ContactMe.vue'
 import PersonalDescription from './components/PersonalDescription.vue'
 import Experience from './components/Experience.vue'
 // import Navigation from './components/Navigation.vue'
-import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
+// import DevelopmentPortfolio from './components/DevelopmentPortfolio.vue'
 import PersonalInterest from './components/PersonalInterests.vue';
 
 export default {
@@ -27,7 +27,7 @@ export default {
     PersonalDescription,
     Experience,
     // Navigation,
-    DevelopmentPortfolio,
+    // DevelopmentPortfolio,
     PersonalInterest
 
   }, 
@@ -61,11 +61,11 @@ body {
 p { 
   font-size: 25px;
 }
-h4, h5, h6{
+h3, h4, h5, h6{
   text-align: center;
 }
 
-h4, h5 {
+h3, h4, h5 {
     font-family: Courier New, Century Gothic, sans-serif;
 }
 

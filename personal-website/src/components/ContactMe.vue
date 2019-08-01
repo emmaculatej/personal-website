@@ -1,6 +1,8 @@
 <template>
     <div class="card">
-        <h4 class="footerHeading">Connect with me! </h4>
+        <div class="footerHeading">
+        <h3>Connect with me! </h3>
+        </div>
         <div class="row">
             <div class="col-3">          
             <h4> 
@@ -49,8 +51,17 @@ export default {
 
 .footerHeading{
     padding-bottom: 3%;
-    font-size: 200%;
     padding-top: 3%;
+    border-width: 5px;
+    border-color: coral;
+}
+
+h4 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 200%;
 }
 
 </style>
