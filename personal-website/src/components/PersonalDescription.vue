@@ -1,20 +1,15 @@
 <template>
 <div class="card personalDescription">
-    <div class="personalHeaders">
-    <h4> {{ personalDetails.forename}} {{ personalDetails.surname}} </h4>
-    <h5> {{ personalDetails.occupation}} </h5>
-    </div>
     <div>
         <img class="profilePicture" src="../assets/profilepic.jpg"/>
+        <h4 class="nameHeader">  Hi, 
+        I'm {{ personalDetails.forename}}! </h4>
         <p class="description"> Experienced Developer with a demonstrated history of working in the information technology and services industry. 
             Skilled in HTML, JavaScript, .Net framework, C#, and Visual Studio. 
             Strong engineering professional with a Bachelor's degree focused in Computer Science from University of Surrey.
             Experienced Developer with a demonstrated history of working in the information technology and services industry. 
             Skilled in HTML, JavaScript, .Net framework, C#, and Visual Studio. 
-            Strong engineering professional with a Bachelor's degree focused in Computer Science from University of Surrey.
-            Experienced Developer with a demonstrated history of working in the information technology and services industry. 
-            Skilled in HTML, JavaScript, .Net framework, C#, and Visual Studio. 
-            Strong engineering professional with a Bachelor's degree focused in Computer Science from University of Surrey. </p>
+            </p>
     <div class="cvButton">
         <c-v/>
     </div>
@@ -43,7 +38,7 @@ export default {
 <style scoped>
 
 .cvButton {
-    margin-left: 65%;
+    margin-left: 58%;
 }
 .profilePicture {
     margin-left: 10%;
@@ -61,13 +56,20 @@ export default {
     display: block;
     text-align: center;
     width: 40%;
-    padding-top: 8%;
+    padding-top: 2%;
     padding-left: 5%;
+    padding-bottom: 2%;
 
 }
 
-.personalHeaders {
-    font-size: 250%;
+.nameHeader{
+    margin-left: 45%;
+    display: block;
+    text-align: center;
+    width: 40%;
+    padding-top: 7%;
+    padding-left: 5%;
+    font-size: 300%;
 }
 
 .personalDescription{

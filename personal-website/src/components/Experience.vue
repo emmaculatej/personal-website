@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="text-center" style="padding-top: 5%;">
-    <a href="https://uk.linkedin.com/in/emmaculate-jeyarajah" class="btn btn-lg" style="background-color: coral;"> Learn More </a>
+    <a href="https://uk.linkedin.com/in/emmaculate-jeyarajah" class="btn btn-lg" style="background-color: coral;"> More Information </a>
     </div>
 </div>
 

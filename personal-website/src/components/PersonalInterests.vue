@@ -8,19 +8,22 @@
                     <img class="card-img-top" src="../assets/azuruplays.png"/>
                     <h5 class="card-title"> {{youtubeInterest.title}} </h5>
                     <div class="text-center">
-                        <button class="btn btn-danger" v-on:click="youtube = !youtube"> Learn More </button>
+                        <button class="btn btn-warning" v-on:click="youtube = !youtube">Find Out More </button>
                     </div>
                     <div class="card-text centreText" v-if="youtube == true">
                         <span class="card-text">{{youtubeInterest.description}}</span>
+                        <div style="padding-top:5%;">
+                            <a href="https://www.youtube.com/channel/UCuBLXiAFnO-hvSXyWQ3f5gA" class="btn btn-danger"> Youtube</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body" alt="Card image cap">
-                    <img class="card-img-top" src="../assets/flower.jpg" />
+                    <img class="card-img-top" src="../assets/music.png" />
                     <h5 class="card-title"> {{musicInterest.title}} </h5>
                     <div class="text-center">
-                        <button class="btn btn-warning" v-on:click="music = !music"> Learn More </button>
+                        <button class="btn btn-warning" v-on:click="music = !music"> Find Out More </button>
                     </div>
                     <div class="card-text centreText" v-if="music == true">
                         <span > {{musicInterest.description}} </span>
@@ -47,7 +50,7 @@ export default {
             },
             musicInterest: {
                 title: 'Music',
-                description: 'Grade 7 Violinist, Grade 6 Pianist, Grade 4 Clarinetist'
+                description: 'I play three musical instruments: piano, violin and clarinet. I also enjoy listening to music, in particular Lo-Fi Hip-Hop.'
             }
         }
     },

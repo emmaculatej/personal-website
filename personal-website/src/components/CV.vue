@@ -1,6 +1,6 @@
 <template>
     <div>           
-        <button class="btn btn-lg" style="background-color: white; color: coral;"  v-on:click="generate"> CV button </button>
+        <button class="btn btn-lg cvButton" v-on:click="generate"> Generate CV</button>
     </div>
 </template>
 
@@ -32,3 +32,12 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.cvButton {
+    background-color: white; 
+    color: coral;
+    width: 45%;
+    height: 40%;    
+}
+</style>
