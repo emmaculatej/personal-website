@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - "4"
+  - "10.15.2"
+cache: npm
 env:
   - CXX=g++-4.8
 addons:
@@ -9,9 +10,15 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
-
-before_script:
-  - npm install
-
+before_install:
+install:
+  - npm ci
 script:
   - npm run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages
