@@ -1,10 +1,11 @@
 language: node_js
 node_js:
   - node
-before-install:
-  - npm install
+  
+cache: npm
+
 script:
-  - npm run build --prod
+  - npm run build
 
 deploy:
   provider: pages
