@@ -5,11 +5,11 @@ before-install:
   - npm install
 script:
   - npm run build --prod
-  - cd dist
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  local-dir: dist
   on:
-    branch: gh-pages
+    branch: master
