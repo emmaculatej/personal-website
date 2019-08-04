@@ -56,7 +56,6 @@ export default {
     display: block;
     text-align: center;
     width: 40%;
-    padding-top: 2%;
     padding-left: 5%;
     padding-bottom: 2%;
 
@@ -69,7 +68,7 @@ export default {
     width: 40%;
     padding-top: 7%;
     padding-left: 5%;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 .personalDescription{
