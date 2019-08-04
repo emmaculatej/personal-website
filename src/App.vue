@@ -59,7 +59,7 @@ body {
 }
 
 p { 
-  font-size: 25px;
+  font-size: 20px;
 }
 h3, h4, h5, h6{
   text-align: center;
