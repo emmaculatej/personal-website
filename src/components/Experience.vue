@@ -76,7 +76,7 @@ body {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 30%;
+  width: 45%;
 }
 
 /* The circles on the timeline */
@@ -95,12 +95,12 @@ body {
 
 /* Place the container to the left */
 .left {
-  left: -15%;
+  left: -22.5%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 15%;
+  left: 22.5%;
 }
 
 /* Add arrows to the left container (pointing right) */
