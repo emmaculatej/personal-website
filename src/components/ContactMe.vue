@@ -36,7 +36,7 @@ export default {
             socialMedia: [
                 {id: 1, icon: ['fab', 'linkedin'], title: 'LinkedIn', link: 'https://uk.linkedin.com/in/emmaculate-jeyarajah'},
                 {id: 2, icon: ['fab', 'github'], title: 'GitHub', link: 'https://github.com/emmaculatej'},
-                {id: 2, icon: ['fab', 'youtube'], title: 'Youtube', link: 'https://www.youtube.com/channel/UCuBLXiAFnO-hvSXyWQ3f5gA'}
+                {id: 3, icon: ['fab', 'youtube'], title: 'Youtube', link: 'https://www.youtube.com/channel/UCuBLXiAFnO-hvSXyWQ3f5gA'}
             ]
         }
     }
