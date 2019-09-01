@@ -4,33 +4,42 @@
     </div>
 </template>
 
-<script>
-import { Document, Paragraph, Packer, TextRun } from "docx";
-import { saveAs } from 'file-saver';
+<script lang="ts">
+import * as fs from "fs";
+import { Document, Packer, Paragraph, TextRun } from "docx";
 
 export default {
     name: 'CV',
     methods: {
-    generate() {
-                const doc = new Document();
+        generate() {
+            const doc = new Document();
 
-                const paragraph = new Paragraph("Hello World");
-                const institutionText = new TextRun("Foo Bar").bold();
-                const dateText = new TextRun("Github is the best").tab().bold();
-                paragraph.addRun(institutionText);
-                paragraph.addRun(dateText);
+            doc.addSection({
+                properties: {},
+                children: [
+                    new Paragraph({
+                        children: [
+                            new TextRun("Hello World"),
+                            new TextRun({
+                                text: "Foo Bar",
+                                bold: true,
+                            }),
+                            new TextRun({
+                                text: "Github is the best",
+                                bold: true,
+                            }).tab(),
+                        ],
+                    }),
+                ],
+            });
 
-                doc.addParagraph(paragraph);
-
-                const packer = new Packer();
-
-                packer.toBlob(doc).then(blob => {
-                    saveAs(blob, "myCV.docx");
-                });
+            Packer.toBase64String(doc).then((str) => {
+                fs.writeFileSync("My Document.docx", str);
+            });
+        }
     }
-    }
+
 }
-
 </script>
 
 <style scoped>
