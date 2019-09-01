@@ -53,18 +53,6 @@ export default {
                 description: 'I play three musical instruments: piano, violin and clarinet. I also enjoy listening to music, in particular Lo-Fi Hip-Hop.'
             }
         }
-    },
-    methods: {
-        showYoutube: void {
-            youtube: true
-        },
-        showMusic: void {
-            music: true
-        },
-        showFitness: void {
-            fitness: true
-        }
-
     }
 }
 </script>
